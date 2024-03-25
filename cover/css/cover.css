@@ -1,0 +1,179 @@
+/* this is where all of your CSS styles go */
+
+
+/*BACKGROUND*/
+.gold{
+	width: 800px;
+	height: 1200px;
+	background: linear-gradient(to bottom left, #FED253, #FFFBCA, #FED253);
+	border: solid black 4px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -5;
+}
+
+.black{
+	width: 800px;
+	height: 600px;
+	background: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 0%);
+	z-index: -1;
+}
+
+
+
+
+
+
+/*SEMICIRCLES & ANIMATION*/
+.circle {
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	left: 16%;
+	top: 27%;
+	animation: rotate 10s linear infinite;
+	animation-delay: 1s;
+	transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg); }
+	90%, 100%{ transform: rotate(360deg) }
+}
+
+
+.mask {
+	width: 550px;
+	height: 275px;
+	position: absolute;
+	transform: translate(-50%, 0%);
+	transform-origin: bottom center;
+	left: 50%;
+	top: 0px;
+	overflow: hidden;
+/*	animation: rotate 10s linear;*/
+}
+
+
+.blacksemicircle{
+	background: black;
+	width: 550px;
+	height: 550px;
+	border-radius: 50% 50% 0 0;
+}
+
+
+.mask2 {
+	width: 550px;
+	height: 275px;
+	position: absolute;
+	transform: translate(-50%, 0%);
+	transform-origin: top center;
+	left: 50%;
+	top: 275px;
+	overflow: hidden;
+/*	animation: rotate 10s linear;*/
+}
+
+
+.goldsemicircle{
+	background: linear-gradient(to bottom left, #FED253, #FFFBCA, #FED253);
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	top: -275px;
+	border-radius: 0 0 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*TEXT*/
+@font-face{
+	font-family: 'Afacad';
+		src: url(../fonts/Afacad[wght].ttf) format('ttf');
+}
+
+
+@font-face{
+	font-family: 'Afacad-Italic';
+		src: url(../fonts/Afacad-Italic[wght].ttf) format('ttf');
+}
+
+
+.author{
+	font-family: 'Afacad';
+	font-size: 70px;
+	color: black;
+	letter-spacing: 11px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 10%;
+	text-align: center;
+	width: 800px;
+}
+
+
+.title{
+	font-family: 'Afacad';
+	color:#FBD169;
+	font-size: 35px;
+	letter-spacing: 9px;
+	position: absolute;
+	width: 800px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 85%;
+	text-align: center;
+	word-spacing: 230px;
+	font-variation-settings: "wght" 400;
+}
+
+
+.italic{
+	font-family: 'Afacad-Italic';
+	color:#FBD169;
+	font-size: 35px;
+	letter-spacing: 9px;
+	word-spacing: 0px;
+	position: absolute;
+	width: 800px;
+	transform: translate(-50%, -50%);
+	left: 49%;
+	top: 55%;
+	text-align: center;
+	font-variation-settings: "ital" 200;
+	font-variation-settings: "wght" 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
